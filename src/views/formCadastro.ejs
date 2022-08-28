@@ -1,0 +1,18 @@
+<html>
+  <!-- <head> -->
+  <%- include('./partials/head') %>
+  <!-- </head> -->
+  
+  <body>
+    <h1> Criar Conta </h1>
+    
+    <!-- Formulário aponta para a rota de cadastro utilizando o método POST -->
+    <form action="/cadastro" method="POST">
+      <input type="text" placeholder="email" name="email" required>
+      <input type="password" placeholder="senha" name="senha" required>
+      <button>Fazer Cadastro</button>
+    </form>
+
+    <a href="/">Voltar</a>
+  </body>
+</html>

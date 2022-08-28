@@ -1,0 +1,23 @@
+<html>
+  <!-- <head> -->
+  <%- include('./partials/head') %>
+  <!-- </head> -->
+  
+  <body>
+    <h1> Login </h1>
+
+    <!-- Mostra mensagem de erro caso o email ou senha sejam inválidos -->
+    <p style="color: red; margin-bottom: 24px;">
+      <%= error ? error : '' %>
+    </p>
+
+    <!-- Formulário aponta para a rota de login utilizando o método POST -->
+    <form action="/login" method="POST">
+      <input type="text" placeholder="email" name="email" required>
+      <input type="password" placeholder="senha" name="senha" required>
+      <button>Fazer Login</button>
+    </form>
+
+    <a href="/sign-up">Criar Conta</a>
+  </body>
+</html>
